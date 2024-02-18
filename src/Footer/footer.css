@@ -1,0 +1,86 @@
+﻿/*footer.css*/
+
+.browse {
+    color: #787878;
+    margin-left: 36%;
+    margin-top: 34px;
+    font-weight: normal;
+}
+
+nav {
+    margin: 0 11%;
+}
+
+.links {
+    color: #b5b5b5;
+    text-decoration: none;
+    font-size: 110%;
+}
+
+.links:hover {
+    text-decoration: underline;
+}
+
+.pages {
+    color: #b5b5b5;
+    margin: 0 13%;
+    margin-top: 200px;   
+}
+
+.pages h1 {
+    font-weight: normal;
+}
+
+.ul_1 {
+    float: left;
+}
+
+.ul_2 {
+    margin-left: 16%;
+    width: 12%;
+    position: absolute;
+
+}
+
+.ul_3 {
+    position: absolute;
+    margin-left: 33%;
+    width: 17%;
+
+}
+
+.ul_4 {
+    position: absolute;
+    margin-left: 50%;
+    width: 17%;
+
+}
+
+.ul_5 {
+    position: absolute;
+    margin-left: 64%;
+    width: 17%;
+}
+
+.clear {
+    clear: both;
+}
+
+footer {
+    background-color: #484242;
+    height: 50px;
+    margin-top: 50px;
+}
+
+footer h3 {
+    color: #9d9a9a;
+    font-size: 120%;
+    font-weight: normal;
+    padding-top: 10px; 
+    text-align: center;
+}
+
+
+
+
+
