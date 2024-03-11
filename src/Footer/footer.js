@@ -136,7 +136,7 @@ export function Footer() {
             <Route path='/transportation' element={<Transportation />} />
             <Route path='/vectors' element={<Vectors />} />
             <Route path='/vintage' element={<Vintage />} />
-            <Route path='http://portfolio.local/' element={<UpButton />} />
+            <Route path='https://ryssllann.github.io/myportfolio/' element={<UpButton />} />
         </Routes>
         <div className="clear"></div>
         <footer><h3>Copyright &#169; 2024 My Portfolio</h3></footer>
