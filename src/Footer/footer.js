@@ -1,4 +1,6 @@
 ﻿import { Routes, Route, Link } from 'react-router-dom';
+import arrow from './images/arrow.png';
+import { useState, useEffect } from 'react';
 import { 
         Main, 
         Business, 
@@ -29,15 +31,27 @@ import {
         Technology,
         Transportation,
         Vectors,
-        Vintage
+        Vintage,
+        UpButton
       } from './pages';
 import './footer.css';
 
 
 
 
+
 export function Footer() {
 
+   const [scroll, setScroll] = useState(0);
+    
+   const handlelScroll = () => {
+      setScroll(window.scrollY);
+   };
+   
+   useEffect(() => {
+    window.addEventListener('scroll', handlelScroll);
+    return () => window.removeEventListener('scroll', handlelScroll)}, []);
+    
     return (
         <>
         <h1 className='browse'>BROWSE BY CATEGORY</h1>
@@ -83,6 +97,13 @@ export function Footer() {
                 <li><Link to='vintage' className='links'>Vintage</Link></li>
             </ul>
         </nav>
+        <div className="clear"></div>
+        <nav className={`backArrow ${scroll < 50 ? '' : 'show'}`}>    
+            <Link to='http://portfolio.local/' className='upbutton'>
+            <div className='arrow'><img src={arrow} /></div>
+            BACK</Link>
+        </nav>
+        
          <Routes>
             <Route exact path='/' element={<Main />} />
             <Route path='/abstract' element={<Abstract />} />
@@ -115,6 +136,7 @@ export function Footer() {
             <Route path='/transportation' element={<Transportation />} />
             <Route path='/vectors' element={<Vectors />} />
             <Route path='/vintage' element={<Vintage />} />
+            <Route path='http://portfolio.local/' element={<UpButton />} />
         </Routes>
         <div className="clear"></div>
         <footer><h3>Copyright &#169; 2024 My Portfolio</h3></footer>
@@ -125,3 +147,5 @@ export function Footer() {
 
 //Добавить Router and Link для 4-й колонки V
 // Добавить крайний footer V
+// Реализовать на кнопку upbutton JSX V
+// Разместить project на GitHub

@@ -28,6 +28,7 @@ import technology from './images/technology.jpg';
 import transportation from './images/transportation.jpg';
 import vectors from './images/vectors.jpg';
 import vintage from './images/vintage.jpg';
+import arrow from './images/arrow.png';
 
 
 
@@ -36,7 +37,7 @@ export function Main() {
     return (
         <>
             <div>
-                <h1>[Leo Images]</h1>  
+                <h1></h1>  
             </div> 
         </>  
     );
@@ -306,6 +307,18 @@ export function Vintage() {
         </div>
     );
 }
+
+export function UpButton () {
+    return (
+       <>
+          <div className="upbutton">
+            <span>BACK</span>
+          </div> 
+
+        </> 
+    )
+}
+
 
 
 
